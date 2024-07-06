@@ -15,7 +15,7 @@ module.exports = {
 
         // Compruebo que tenga el atributo "nombre" y que este sea un string. Si no cumple ninguna, retorno un mensaje de error al cliente
         if (!atributos.includes("nombre") || typeof elemento["nombre"] !== "string") {
-          return res.status(400).json({ status: "wrong format", message: "Cada estudiante debe de tener un atributo name que sea string" })
+          return res.status(400).json({ status: "wrong format", message: "Cada estudiante debe de tener un atributo nombre que sea string" })
         }
       } else {
         return res.status(400).json({ status: "wrong format", message: "Cada estudiante debe de ser un objeto y no cualquier otra cosa" })

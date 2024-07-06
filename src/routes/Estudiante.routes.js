@@ -6,7 +6,6 @@ const routes = Router()
 
 routes.get("/", obtenerEstudiantes)
 routes.get("/:id", obtenerEstudiante)
-
 routes.post("/", validateDTO, agregarEstudiantes)
 
 module.exports = routes

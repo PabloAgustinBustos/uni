@@ -11,6 +11,7 @@ const Estudiante = sequelize.define("Estudiante", {
   nombre: {
     type: DataTypes.STRING,
     allowNull: false,
+    
     validate: {
       notEmpty: {
         msg: "El nombre del estudiante no debe de ser un string vacío"
